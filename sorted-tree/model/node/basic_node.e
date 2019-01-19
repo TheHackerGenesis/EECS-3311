@@ -210,8 +210,10 @@ feature -- position queries
 			-- i.e. if Current is right child of parent, sibling is left child of parent
 			-- Returns nothing if child is root or has not sibling
 		do
-			-- TO DO --
-			check False end
+			result := parent.left.sibling ~ current xor parent.right.sibling ~ current
+		end
+
+
 		ensure
 			correct_sibling: attached parent as p implies ((p.right = Result and p.left = Current) xor (p.left = Result and p.right = Current))
 		end
@@ -256,8 +258,9 @@ feature -- inorder traversal from Current
 			-- and place output as a string in `inorder_result'
 			-- command version
 		do
-			-- TO DO --
-			check False end
+
+
+		check false end
 		end
 
 	inorder: STRING
@@ -267,8 +270,10 @@ feature -- inorder traversal from Current
 		do
 			Result := out
 			-- TO DO --
-			check False end
+			--print(current.traverse_inorder + "%N")
+		check false end
 		end
+
 
 feature -- output
 
