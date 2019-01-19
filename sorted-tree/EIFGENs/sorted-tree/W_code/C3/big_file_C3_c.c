@@ -1,0 +1,6 @@
+#include "in1025d.c"
+#include "in1025.c"
+#include "ba1026d.c"
+#include "ba1026.c"
+#include "el1027d.c"
+#include "el1027.c"

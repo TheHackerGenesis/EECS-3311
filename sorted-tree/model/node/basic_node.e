@@ -92,7 +92,7 @@ feature -- queries
 			-- Are the current node's key and value same as those of `other'?
 		do
 			-- TO DO --
-			check False end
+			Result := Current.key ~ other.key and Current.value ~ other.value
 		end
 
 	key: K
