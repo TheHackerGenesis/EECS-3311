@@ -32,10 +32,10 @@ feature{NONE} -- private commands
 				if attached a_node.right as r then
 					extend_node (a_item, r)
 				else
-						a_node.right := create {NODE[K,V]}.make_red (a_item)
-						if attached a_node.right as r then
-							-- add balanced left
-						end
+					a_node.right := create {NODE[K,V]}.make_red (a_item)
+					if attached a_node.right as r then
+						-- add balanced left
+					end
 				end
 
 			elseif a_node.key > a_item.key then
@@ -43,9 +43,9 @@ feature{NONE} -- private commands
 					extend_node (a_item, l)
 				else
 					a_node.left := create {NODE[K,V]}.make_red (a_item)
-						if attached a_node.left as l then
-							-- add balanced left
-						end
+					if attached a_node.left as l then
+						-- add balanced left
+					end
 				end
 			end
 		end
