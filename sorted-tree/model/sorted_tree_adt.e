@@ -164,7 +164,11 @@ feature -- queries
 			i: INTEGER
 		do
 			-- TO DO --
-			check False end
+			if (model ~ other.model) then
+				if (model_path ~ other.model_path) then
+					Result := ((model ~ other.model) and (model_path ~ other.model_path))
+				end
+			end
 		ensure then
 			same:
 				Result = ((model ~ other.model) and (model_path ~ other.model_path))
@@ -466,7 +470,7 @@ feature{NONE, ES_TEST, SORTED_TREE_ADT} -- private queries
 			not is_empty
 		do
 			-- TO DO --
-			check False end
+			Result := model_restricted_to (a_node)[model_restricted_to (a_node).count]
 --			The code below is wrong, it's just there to compile
 --			without VEVI error
 			check attached root as l_root then
@@ -483,7 +487,7 @@ feature{NONE, ES_TEST, SORTED_TREE_ADT} -- private queries
 				not is_empty
 		do
 			-- TO DO --
-			check False end
+			Result := model_restricted_to (a_node)[model_restricted_to (a_node).lower]
 --			The code below is wrong, it's just there to compile
 --			without VEVI error
 			check attached root as l_root then
