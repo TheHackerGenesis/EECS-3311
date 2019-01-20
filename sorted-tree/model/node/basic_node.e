@@ -213,11 +213,11 @@ feature -- position queries
 			-- TO DO --
 			if attached Current.parent as p then
 				if p.right = Current then
-					result := p.left
+					Result := p.left
 				elseif p.left = Current then
-					result := p.right
+					Result := p.right
 				else
-					result := void
+					Result := void
 			end
 		end
 
@@ -235,9 +235,9 @@ feature -- position queries
 			-- TO DO --
 	if attached Current.parent as p then
 				if p.right = Current then
-					result := Current.left
+					Result := left
 				else
-					result := void
+					Result := void
 			end
 
 end
@@ -254,7 +254,18 @@ end
 			-- Returns nothing if Current is root or outer child does not exists
 		do
 			-- TO DO --
-			check False end
+			if attached Current.parent as p then
+				if p.right = Current then
+					Result := right
+				elseif p.left = Current then
+					Result := left
+				else
+					Result := void
+
+
+				end
+
+			end
 		ensure
 			correct_outer_child:
 				attached parent as p implies
@@ -275,7 +286,22 @@ feature -- inorder traversal from Current
 			-- command version
 		do
 			-- TO DO --
-			check False end
+			if Current.is_leaf then
+				inorder_result := out
+			end
+
+			inorder_result := ""
+			if attached Current.left as l then
+					l.traverse_inorder
+					inorder_result := l.inorder_result
+			end
+
+			inorder_result := inorder_result + out
+			if attached Current.right as r then
+					r.traverse_inorder
+					inorder_result := inorder_result + r.inorder_result
+			end
+
 		end
 
 	inorder: STRING
@@ -285,7 +311,16 @@ feature -- inorder traversal from Current
 		do
 			Result := out
 			-- TO DO --
-			check False end
+			Result.make_empty
+
+			if attached left as l then
+				l.traverse_inorder
+			end
+			Result.append (Current.out)
+
+			if attached right as r then
+				r.traverse_inorder
+			end
 		end
 
 feature -- output
