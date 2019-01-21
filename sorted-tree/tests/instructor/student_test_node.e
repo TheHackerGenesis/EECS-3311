@@ -2,7 +2,7 @@ note
 	description: "[
 		Grading tests start at t100
 		]"
-	author: ""
+	author: "Oppong"
 	date: "$Date$"
 	revision: "$Revision$"
 
@@ -96,7 +96,7 @@ feature -- tests
 			n1, n2: BASIC_NODE [STRING, INTEGER_64]
 		do
 			comment ("t1: check that is_equal work")
-			create n1.make ([zak, phone]) 
+			create n1.make ([zak, phone])
 			create n2.make (["Zak", phone])
 			Result := n1 ~ n2
 		end

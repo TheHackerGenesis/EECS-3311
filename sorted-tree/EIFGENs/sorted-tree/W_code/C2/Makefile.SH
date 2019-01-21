@@ -55,16 +55,16 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C2_c.o 
 
-OLDOBJECTS =  ba1016.o ba1016d.o ba1023.o ba1023d.o so1002.o so1002d.o so1020.o \
-	so1020d.o el1003.o el1003d.o el1021.o el1021d.o no1015.o no1015d.o \
-	no1022.o no1022d.o so1017.o so1017d.o so1024.o so1024d.o se1014.o \
-	se1014d.o fu1004.o fu1004d.o fu1007.o fu1007d.o fu1009.o fu1009d.o \
-	fu1018.o fu1018d.o da998.o da998d.o ti996.o ti996d.o se1005.o \
-	se1005d.o se1010.o se1010d.o pa1011.o pa1011d.o pa1012.o pa1012d.o \
-	pa1013.o pa1013d.o pa1019.o pa1019d.o ba1006.o ba1006d.o ba1008.o \
-	ba1008d.o da994.o da994d.o da1001.o da1001d.o da997.o da997d.o \
-	ti995.o ti995d.o da1000.o da1000d.o da992.o da992d.o fi993.o fi993d.o \
-	da999.o da999d.o 
+OLDOBJECTS =  ro996.o ro996d.o no1022.o no1022d.o ba1023.o ba1023d.o so1007.o \
+	so1007d.o se1010.o se1010d.o se1012.o se1012d.o fu1011.o fu1011d.o \
+	fu1014.o fu1014d.o fu1016.o fu1016d.o fu1019.o fu1019d.o se1008.o \
+	se1008d.o el1021.o el1021d.o pa1009.o pa1009d.o pa1017.o pa1017d.o \
+	pa1018.o pa1018d.o pa1020.o pa1020d.o ba1013.o ba1013d.o ba1015.o \
+	ba1015d.o da1003.o da1003d.o ti1001.o ti1001d.o da1006.o da1006d.o \
+	da993.o da993d.o da999.o da999d.o ab994.o ab994d.o da995.o da995d.o \
+	da1002.o da1002d.o ti992.o ti992d.o ti1000.o ti1000d.o da1004.o \
+	da1004d.o da1005.o da1005d.o da997.o da997d.o fi998.o fi998d.o \
+	in1024.o in1024d.o 
 
 all: Cobj2.o
 

@@ -9,7 +9,7 @@ note
 			-- TO DO --
 			check False end
 	]"
-	author: "JP, JSO"
+	author: "Oppong Michael"
 	date: "$Date$"
 	revision: "$Revision$"
 
@@ -26,67 +26,68 @@ feature{NONE} -- private commands
 
 	extend_node(a_item: TUPLE[key:K; val:V]; a_node: NODE[K,V])
 			-- helper method to extend `node' with `a_item'
-		do
-			-- TO DO --
-			if a_node.key < a_item.key then
-				if attached a_node.right as r then
-					extend_node (a_item, r)
-				else
-					a_node.right := create {NODE[K,V]}.make_red (a_item)
-					if attached a_node.right as r then
-						-- add balanced left
-					end
-				end
 
-			elseif a_node.key > a_item.key then
-				if attached a_node.left as l then
-					extend_node (a_item, l)
-				else
-					a_node.left := create {NODE[K,V]}.make_red (a_item)
-					if attached a_node.left as l then
-						-- add balanced left
-					end
-				end
-			end
-		end
-
-
-	remove_node(a_node: NODE[K,V])
-			-- helper method to remove `node'
 		local
-		largest: NODE[K,V]
-		l_item: TUPLE[K,V]
-
+			new: NODE[K,V]
 		do
-			-- TO DO --
-			if attached a_node.left as l and then attached a_node.right then
-				largest := find_largest(l)
-				l_item := largest.item
-				remove_node(largest)
-				a_node.item := l_item
+			-- TO DO --done
 
-			elseif attached a_node.only_child as child then
-				if not a_node.is_black = child.is_black then
-					a_node.set_black
+			new := create {NODE[K,V]}.make (a_item)
+
+			if new > a_node  then
+				if attached a_node.right as r then
+					extend_node(a_item, r)
 				else
-					a_node.set_double_black
+					a_node.set_right(new)
 				end
-				a_node.replace_node (child)
-
-				if a_node.is_double_black then
-				end
-
-			elseif attached a_node.parent as parent then
-				if a_node.is_black then
-					a_node.set_double_black
-				end
-				a_node.make_void
-
-				if a_node.is_double_black and then attached parent.right as r then
-				end
-
-			else
-			wipe_out
 			end
+
+
+
+			if new < a_node  then
+				if attached a_node.left as l then
+					extend_node(a_item, l)
+				else
+					a_node.set_left(new)
+				end
+
+			end
+
+
+
 		end
-end
+
+	remove_node(a_node: NODE[K,V]) --EDIT THE CODEEEEEEEEEE IMPORTANT DO IT DO NOT FORGET@#$%^&*
+  -- helper method to remove `node'
+		 local
+		 temp:NODE[K,V]
+		 do
+			  if a_node = root and a_node.is_leaf then
+			  	Current.wipe_out
+			  end
+
+			  if a_node.is_leaf then
+			  	a_node.make_void
+			  end
+
+			  if attached a_node.right  as ar  and a_node.left=Void then
+			     a_node.replace_node (ar)
+			  end
+			  if attached a_node.left  as al and a_node.right=Void then
+			     a_node.replace_node (al)
+			  end
+			  if attached a_node.right as ar and attached a_node.left  as al then
+			   temp:=current.find_smallest (ar)
+			   a_node.set_item(temp.item)
+
+			   if attached temp.right as tr and attached temp.parent as tp then
+			    tp.set_right (tr)
+			    temp.make_void
+
+			    else
+			    temp.make_void
+			   end
+			  end
+			 end
+
+		end

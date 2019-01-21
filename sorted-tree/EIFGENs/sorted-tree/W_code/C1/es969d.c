@@ -32,7 +32,7 @@ static const EIF_TYPE_INDEX egt_19_969 [] = {0xFF01,232,0xFFFF};
 static const EIF_TYPE_INDEX egt_20_969 [] = {0xFF01,232,0xFFFF};
 static const EIF_TYPE_INDEX egt_21_969 [] = {0xFF01,232,0xFFFF};
 static const EIF_TYPE_INDEX egt_22_969 [] = {0xFF01,232,0xFFFF};
-static const EIF_TYPE_INDEX egt_23_969 [] = {903,0xFF01,981,0xFFFF};
+static const EIF_TYPE_INDEX egt_23_969 [] = {903,0xFF01,986,0xFFFF};
 static const EIF_TYPE_INDEX egt_24_969 [] = {903,0xFF01,232,0xFFFF};
 static const EIF_TYPE_INDEX egt_25_969 [] = {0xFF01,232,0xFFFF};
 
@@ -120,8 +120,8 @@ void Init969(void)
 	IDSC(desc_969, 0, 968);
 	IDSC(desc_969 + 1, 1, 968);
 	IDSC(desc_969 + 32, 312, 968);
-	IDSC(desc_969 + 33, 371, 968);
-	IDSC(desc_969 + 52, 367, 968);
+	IDSC(desc_969 + 33, 383, 968);
+	IDSC(desc_969 + 52, 375, 968);
 }
 
 
