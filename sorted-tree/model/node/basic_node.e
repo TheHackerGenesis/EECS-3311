@@ -26,7 +26,7 @@ note
 			traverse_inorder (command0
 			inorder query
 	]"
-	author: "JSO"
+	author: "Oppong Michael"
 	date: "$Date$"
 	revision: "$Revision$"
 
@@ -91,8 +91,9 @@ feature -- queries
 	is_equal (other: like Current): BOOLEAN
 			-- Are the current node's key and value same as those of `other'?
 		do
-			-- TO DO --
-			Result := Current.key ~ other.key and Current.value ~ other.value
+			-- TO DO -- done
+			Result := key ~ other.key and value ~ other.value
+
 		end
 
 	key: K
@@ -210,17 +211,21 @@ feature -- position queries
 			-- i.e. if Current is right child of parent, sibling is left child of parent
 			-- Returns nothing if child is root or has not sibling
 		do
-			-- TO DO --
-			if attached Current.parent as p then
-				if p.right = Current then
-					Result := p.left
-				elseif p.left = Current then
-					Result := p.right
-				else
-					Result := void
-			end
-		end
+			-- TO DO -- done
+			if attached parent as p then
 
+				if p.left = Current then
+					if p.right /= void then
+						Result := p.right
+					end
+				end
+
+				if p.right = Current then
+					if p.left /= void then
+						Result := p.left
+					end
+				end
+			end
 
 
 		ensure
@@ -232,15 +237,24 @@ feature -- position queries
 			-- e.g. if Current is right child of parent, Result is left child of Current
 			-- Returns nothing if Current is root or inner child does not exists
 		do
-			-- TO DO --
-	if attached Current.parent as p then
+			-- TO DO -- done
+
+			if attached parent as p then
+
+				if p.left = Current then
+					if Current.right /= void then
+						Result := Current.right
+					end
+				end
+
 				if p.right = Current then
-					Result := left
-				else
-					Result := void
+					if Current.left /= void then
+						Result := Current.left
+					end
+				end
+
 			end
 
-end
 		ensure
 			correct_inner_child:
 				attached parent as p implies
@@ -253,19 +267,24 @@ end
 			-- e.g. if Current is right child of parent, Result is right child of Current
 			-- Returns nothing if Current is root or outer child does not exists
 		do
-			-- TO DO --
-			if attached Current.parent as p then
+			-- TO DO -- done
+			if attached parent as p then
+
+				if p.left = Current then
+					if Current.left /= void then
+						Result := Current.left
+					end
+				end
+
 				if p.right = Current then
-					Result := right
-				elseif p.left = Current then
-					Result := left
-				else
-					Result := void
-
-
+					if Current.right /= void then
+						Result := Current.right
+					end
 				end
 
 			end
+
+
 		ensure
 			correct_outer_child:
 				attached parent as p implies
@@ -281,28 +300,25 @@ feature -- inorder traversal from Current
 		end
 
 	traverse_inorder
-			-- traverse tree inorder starting at Current
-			-- and place output as a string in `inorder_result'
-			-- command version
-		do
-			-- TO DO --
-			if Current.is_leaf then
-				inorder_result := out
-			end
+		  -- traverse tree inorder starting at Current
+		  -- and place output as a string in `inorder_result'
+ 		 -- command version
+			 do
+			  -- TO DO --
+			 if attached current.left as l then
+			   l.traverse_inorder
+			   current.inorder_result.make_empty
+			   current.inorder_result.make_from_string (l.inorder_result+Current.out)
 
-			inorder_result := ""
-			if attached Current.left as l then
-					l.traverse_inorder
-					inorder_result := l.inorder_result
-			end
+			 end
 
-			inorder_result := inorder_result + out
-			if attached Current.right as r then
-					r.traverse_inorder
-					inorder_result := inorder_result + r.inorder_result
-			end
+			 if attached current.right as r then
+			   r.traverse_inorder
 
-		end
+
+			   current.inorder_result.append (r.inorder_result)
+			 end
+			 end
 
 	inorder: STRING
 			-- traverse from Current inorder
@@ -311,17 +327,11 @@ feature -- inorder traversal from Current
 		do
 			Result := out
 			-- TO DO --
-			Result.make_empty
-
-			if attached left as l then
-				l.traverse_inorder
-			end
-			Result.append (Current.out)
-
-			if attached right as r then
-				r.traverse_inorder
-			end
+			Current.traverse_inorder
+			Result := Current.inorder_result
 		end
+
+
 
 feature -- output
 

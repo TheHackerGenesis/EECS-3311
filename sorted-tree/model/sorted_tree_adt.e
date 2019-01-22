@@ -50,7 +50,7 @@ note
 			is_equal
 
 	]"
-	author: "JP, JSO"
+	author: "Oppong Michael"
 	date: "$Date$"
 	revision: "$Revision$"
 
@@ -161,14 +161,11 @@ feature -- queries
 
 	is_equal(other: like Current): BOOLEAN
 		local
-			i: INTEGER
+			i: INTEGER -- I DID THIS REMEMBER TO FIX THIS LATER IMPORTANT@#$%^^&&*
 		do
 			-- TO DO --
-			if (model ~ other.model) then
-				if (model_path ~ other.model_path) then
-					Result := ((model ~ other.model) and (model_path ~ other.model_path))
-				end
-			end
+			Result := ((model ~ other.model) and (model_path ~ other.model_path))
+
 		ensure then
 			same:
 				Result = ((model ~ other.model) and (model_path ~ other.model_path))
@@ -179,7 +176,7 @@ feature -- queries
 		do
 			Result := not attached root
 		ensure
-			count_is_zero: Result = (count = 0)
+			count_is_zero: count = 0
 			empty_matches_model: Result = model.is_empty
 			model_unchanged: model ~ old model.deep_twin
 		end
@@ -468,14 +465,23 @@ feature{NONE, ES_TEST, SORTED_TREE_ADT} -- private queries
 			--finds the largest element of the tree rooted at `a_node'
 		require
 			not is_empty
+		local
+			max_element: NODE[K,V]
 		do
-			-- TO DO --
-			Result := model_restricted_to (a_node)[model_restricted_to (a_node).count]
---			The code below is wrong, it's just there to compile
---			without VEVI error
-			check attached root as l_root then
-				Result := l_root
+			max_element := a_node
+
+			if attached a_node.right as r then
+				if a_node > max_element then
+					max_element:= a_node
+				else
+				max_element := find_largest (r)
+				end
 			end
+
+			Result:= max_element
+
+
+
 		ensure
 			Result ~  model_restricted_to (a_node)[model_restricted_to (a_node).count]
 
@@ -485,14 +491,24 @@ feature{NONE, ES_TEST, SORTED_TREE_ADT} -- private queries
 			--finds the `node' with the smallest element
 		require
 				not is_empty
+
+		local
+			min_element : NODE[K,V]
 		do
-			-- TO DO --
-			Result := model_restricted_to (a_node)[model_restricted_to (a_node).lower]
---			The code below is wrong, it's just there to compile
---			without VEVI error
-			check attached root as l_root then
-				Result := l_root
+			-- TO DO -- working
+
+			min_element := a_node
+
+			if attached a_node.left as l then
+				if a_node < min_element then
+					min_element:= a_node
+				else
+				min_element := find_largest (l)
+				end
 			end
+
+			Result:= min_element
+
 		ensure
 
 			Result ~  model_restricted_to (a_node)[model_restricted_to (a_node).lower]

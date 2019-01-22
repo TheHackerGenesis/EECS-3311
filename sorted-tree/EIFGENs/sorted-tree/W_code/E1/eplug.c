@@ -113,12 +113,12 @@ void egc_init_plug (void)
 	egc_forg_table = egc_forg_table_init;
 
 	egc_system_name = "sorted-tree";
-	egc_system_location = "/eecs/home/kishanpa/Desktop/EECS3311/sorted-tree/EIFGENs/sorted-tree/W_code";
+	egc_system_location = "/media/sf_shared_vm/lab1/sorted-tree/EIFGENs/sorted-tree/W_code";
 	egc_compiler_tag = 38;
 	egc_project_version = 1545063791;
 	egc_has_old_special_semantic = 0;
 	egc_has_ieee_semantic = 1;
-	scount = 1027;
+	scount = 1034;
 
 	egc_rcount = 1;
 	egc_ridx = 0;
@@ -128,7 +128,7 @@ void egc_init_plug (void)
 	egc_rcarg = (int32 *) eif_malloc (sizeof(int32)*egc_rcount);
 	egc_rlist[0] = "ROOT.make";
 	egc_rcdt[0] = 0;
-	egc_rcrid[0] = 5413;
+	egc_rcrid[0] = 5428;
 	egc_rcarg[0] = 0;
 	
 	
@@ -141,7 +141,7 @@ void egc_init_plug (void)
 void egc_rcdt_init (void)
 {
 	if (egc_rcdt[0] == 0) {
-		egc_rcdt[0] = 990; /* ROOT */
+		egc_rcdt[0] = 995; /* ROOT */
 	}
 }
 

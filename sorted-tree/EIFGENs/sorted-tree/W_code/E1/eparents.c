@@ -3880,209 +3880,209 @@ static struct eif_par_types par967 = {967, ptf967, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf968[] = {966,0xFFFF};
 static struct eif_par_types par968 = {968, ptf968, (uint16) 1, (uint16) 0, (char) 0};
 
-/* BST_EXTEND_TEST */
+/* RBT_TESTS2 */
 static EIF_TYPE_INDEX ptf969[] = {968,0xFFFF};
 static struct eif_par_types par969 = {969, ptf969, (uint16) 1, (uint16) 0, (char) 0};
 
-/* STUDENT_TEST_NODE */
+/* STUDENT_BST_TESTS */
 static EIF_TYPE_INDEX ptf970[] = {968,0xFFFF};
 static struct eif_par_types par970 = {970, ptf970, (uint16) 1, (uint16) 0, (char) 0};
 
-/* STUDENT_TESTS */
+/* BST_EXTEND_TEST */
 static EIF_TYPE_INDEX ptf971[] = {968,0xFFFF};
 static struct eif_par_types par971 = {971, ptf971, (uint16) 1, (uint16) 0, (char) 0};
 
-/* CODE_VALIDITY_CHECKER */
-static EIF_TYPE_INDEX ptf972[] = {0,0xFFFF};
+/* STUDENT_TEST_NODE */
+static EIF_TYPE_INDEX ptf972[] = {968,0xFFFF};
 static struct eif_par_types par972 = {972, ptf972, (uint16) 1, (uint16) 0, (char) 0};
 
-/* TIME_UTILITY */
-static EIF_TYPE_INDEX ptf973[] = {0,0xFFFF};
+/* STUDENT_TESTS */
+static EIF_TYPE_INDEX ptf973[] = {968,0xFFFF};
 static struct eif_par_types par973 = {973, ptf973, (uint16) 1, (uint16) 0, (char) 0};
 
-/* TIME_CONSTANTS */
-static EIF_TYPE_INDEX ptf974[] = {973,0xFFFF};
+/* SORTED_TREE_ADT_TESTS */
+static EIF_TYPE_INDEX ptf974[] = {968,0xFFFF};
 static struct eif_par_types par974 = {974, ptf974, (uint16) 1, (uint16) 0, (char) 0};
 
-/* TIME_MEASUREMENT */
+/* RBT_TESTS */
 static EIF_TYPE_INDEX ptf975[] = {974,0xFFFF};
 static struct eif_par_types par975 = {975, ptf975, (uint16) 1, (uint16) 0, (char) 0};
 
-/* TIME_VALUE */
-static EIF_TYPE_INDEX ptf976[] = {975,0xFFFF};
+/* BST_TESTS */
+static EIF_TYPE_INDEX ptf976[] = {974,0xFFFF};
 static struct eif_par_types par976 = {976, ptf976, (uint16) 1, (uint16) 0, (char) 0};
 
-/* DATE_CONSTANTS */
-static EIF_TYPE_INDEX ptf977[] = {973,0xFFFF};
+/* CODE_VALIDITY_CHECKER */
+static EIF_TYPE_INDEX ptf977[] = {0,0xFFFF};
 static struct eif_par_types par977 = {977, ptf977, (uint16) 1, (uint16) 0, (char) 0};
 
-/* DATE_TIME_MEASUREMENT */
-static EIF_TYPE_INDEX ptf978[] = {977,0xFFF7,974,0xFFFF};
-static struct eif_par_types par978 = {978, ptf978, (uint16) 2, (uint16) 0, (char) 0};
+/* TIME_UTILITY */
+static EIF_TYPE_INDEX ptf978[] = {0,0xFFFF};
+static struct eif_par_types par978 = {978, ptf978, (uint16) 1, (uint16) 0, (char) 0};
 
-/* DATE_TIME_VALUE */
+/* TIME_CONSTANTS */
 static EIF_TYPE_INDEX ptf979[] = {978,0xFFFF};
 static struct eif_par_types par979 = {979, ptf979, (uint16) 1, (uint16) 0, (char) 0};
 
-/* DATE_MEASUREMENT */
-static EIF_TYPE_INDEX ptf980[] = {977,0xFFFF};
+/* TIME_MEASUREMENT */
+static EIF_TYPE_INDEX ptf980[] = {979,0xFFFF};
 static struct eif_par_types par980 = {980, ptf980, (uint16) 1, (uint16) 0, (char) 0};
 
-/* ES_TEST_CASE */
-static EIF_TYPE_INDEX ptf981[] = {62,0xFFFF};
+/* TIME_VALUE */
+static EIF_TYPE_INDEX ptf981[] = {980,0xFFFF};
 static struct eif_par_types par981 = {981, ptf981, (uint16) 1, (uint16) 0, (char) 0};
 
-/* ES_VIOLATION_CASE */
-static EIF_TYPE_INDEX ptf982[] = {981,0xFFFF};
+/* DATE_CONSTANTS */
+static EIF_TYPE_INDEX ptf982[] = {978,0xFFFF};
 static struct eif_par_types par982 = {982, ptf982, (uint16) 1, (uint16) 0, (char) 0};
 
+/* DATE_TIME_MEASUREMENT */
+static EIF_TYPE_INDEX ptf983[] = {982,0xFFF7,979,0xFFFF};
+static struct eif_par_types par983 = {983, ptf983, (uint16) 2, (uint16) 0, (char) 0};
+
+/* DATE_TIME_VALUE */
+static EIF_TYPE_INDEX ptf984[] = {983,0xFFFF};
+static struct eif_par_types par984 = {984, ptf984, (uint16) 1, (uint16) 0, (char) 0};
+
+/* DATE_MEASUREMENT */
+static EIF_TYPE_INDEX ptf985[] = {982,0xFFFF};
+static struct eif_par_types par985 = {985, ptf985, (uint16) 1, (uint16) 0, (char) 0};
+
+/* ES_TEST_CASE */
+static EIF_TYPE_INDEX ptf986[] = {62,0xFFFF};
+static struct eif_par_types par986 = {986, ptf986, (uint16) 1, (uint16) 0, (char) 0};
+
 /* ES_BOOLEAN_TEST_CASE */
-static EIF_TYPE_INDEX ptf983[] = {981,0xFFFF};
-static struct eif_par_types par983 = {983, ptf983, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf987[] = {986,0xFFFF};
+static struct eif_par_types par987 = {987, ptf987, (uint16) 1, (uint16) 0, (char) 0};
 
-/* DURATION */
-static EIF_TYPE_INDEX ptf984[] = {106,0xFFF7,963,0xFFFF};
-static struct eif_par_types par984 = {984, ptf984, (uint16) 2, (uint16) 0, (char) 0};
-
-/* DATE_TIME_DURATION */
-static EIF_TYPE_INDEX ptf985[] = {984,0xFFF7,978,0xFFFF};
-static struct eif_par_types par985 = {985, ptf985, (uint16) 2, (uint16) 0, (char) 0};
-
-/* TIME_DURATION */
-static EIF_TYPE_INDEX ptf986[] = {984,0xFFF7,975,0xFFF7,118,0xFFFF};
-static struct eif_par_types par986 = {986, ptf986, (uint16) 3, (uint16) 0, (char) 0};
-
-/* DATE_DURATION */
-static EIF_TYPE_INDEX ptf987[] = {984,0xFFF7,977,0xFFF7,980,0xFFFF};
-static struct eif_par_types par987 = {987, ptf987, (uint16) 3, (uint16) 0, (char) 0};
-
-/* ABSOLUTE */
-static EIF_TYPE_INDEX ptf988[] = {107,0xFFFF};
+/* ES_VIOLATION_CASE */
+static EIF_TYPE_INDEX ptf988[] = {986,0xFFFF};
 static struct eif_par_types par988 = {988, ptf988, (uint16) 1, (uint16) 0, (char) 0};
 
-/* DATE_VALUE */
-static EIF_TYPE_INDEX ptf989[] = {980,0xFFF7,156,0xFFFF};
+/* DURATION */
+static EIF_TYPE_INDEX ptf989[] = {106,0xFFF7,963,0xFFFF};
 static struct eif_par_types par989 = {989, ptf989, (uint16) 2, (uint16) 0, (char) 0};
 
-/* ROOT */
-static EIF_TYPE_INDEX ptf990[] = {146,0xFFF7,967,0xFFFF};
+/* DATE_TIME_DURATION */
+static EIF_TYPE_INDEX ptf990[] = {989,0xFFF7,983,0xFFFF};
 static struct eif_par_types par990 = {990, ptf990, (uint16) 2, (uint16) 0, (char) 0};
 
-/* DATE_TIME_CODE */
-static EIF_TYPE_INDEX ptf991[] = {972,0xFFF7,137,0xFFFF};
-static struct eif_par_types par991 = {991, ptf991, (uint16) 2, (uint16) 0, (char) 0};
+/* TIME_DURATION */
+static EIF_TYPE_INDEX ptf991[] = {989,0xFFF7,980,0xFFF7,118,0xFFFF};
+static struct eif_par_types par991 = {991, ptf991, (uint16) 3, (uint16) 0, (char) 0};
 
-/* FIND_SEPARATOR_FACILITY */
-static EIF_TYPE_INDEX ptf992[] = {972,0xFFF7,0,0xFFFF};
-static struct eif_par_types par992 = {992, ptf992, (uint16) 2, (uint16) 0, (char) 0};
+/* DATE_DURATION */
+static EIF_TYPE_INDEX ptf992[] = {989,0xFFF7,982,0xFFF7,985,0xFFFF};
+static struct eif_par_types par992 = {992, ptf992, (uint16) 3, (uint16) 0, (char) 0};
 
-/* DATE_TIME_CODE_STRING */
-static EIF_TYPE_INDEX ptf993[] = {992,0xFFFF};
+/* ABSOLUTE */
+static EIF_TYPE_INDEX ptf993[] = {107,0xFFFF};
 static struct eif_par_types par993 = {993, ptf993, (uint16) 1, (uint16) 0, (char) 0};
 
+/* DATE_VALUE */
+static EIF_TYPE_INDEX ptf994[] = {985,0xFFF7,156,0xFFFF};
+static struct eif_par_types par994 = {994, ptf994, (uint16) 2, (uint16) 0, (char) 0};
+
+/* ROOT */
+static EIF_TYPE_INDEX ptf995[] = {146,0xFFF7,967,0xFFFF};
+static struct eif_par_types par995 = {995, ptf995, (uint16) 2, (uint16) 0, (char) 0};
+
+/* DATE_TIME_CODE */
+static EIF_TYPE_INDEX ptf996[] = {977,0xFFF7,137,0xFFFF};
+static struct eif_par_types par996 = {996, ptf996, (uint16) 2, (uint16) 0, (char) 0};
+
+/* FIND_SEPARATOR_FACILITY */
+static EIF_TYPE_INDEX ptf997[] = {977,0xFFF7,0,0xFFFF};
+static struct eif_par_types par997 = {997, ptf997, (uint16) 2, (uint16) 0, (char) 0};
+
+/* DATE_TIME_CODE_STRING */
+static EIF_TYPE_INDEX ptf998[] = {997,0xFFFF};
+static struct eif_par_types par998 = {998, ptf998, (uint16) 1, (uint16) 0, (char) 0};
+
 /* TIME_VALIDITY_CHECKER */
-static EIF_TYPE_INDEX ptf994[] = {974,0xFFF7,976,0xFFF7,0,0xFFFF};
-static struct eif_par_types par994 = {994, ptf994, (uint16) 3, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf999[] = {979,0xFFF7,981,0xFFF7,0,0xFFFF};
+static struct eif_par_types par999 = {999, ptf999, (uint16) 3, (uint16) 0, (char) 0};
 
 /* TIME */
-static EIF_TYPE_INDEX ptf995[] = {988,0xFFF7,976,0xFFF7,994,0xFFF7,137,0xFFFF};
-static struct eif_par_types par995 = {995, ptf995, (uint16) 4, (uint16) 0, (char) 0};
-
-/* DATE_VALIDITY_CHECKER */
-static EIF_TYPE_INDEX ptf996[] = {977,0xFFF7,989,0xFFF7,0,0xFFFF};
-static struct eif_par_types par996 = {996, ptf996, (uint16) 3, (uint16) 0, (char) 0};
-
-/* DATE */
-static EIF_TYPE_INDEX ptf997[] = {988,0xFFF7,989,0xFFF7,996,0xFFF7,137,0xFFFF};
-static struct eif_par_types par997 = {997, ptf997, (uint16) 4, (uint16) 0, (char) 0};
-
-/* DATE_TIME_VALIDITY_CHECKER */
-static EIF_TYPE_INDEX ptf998[] = {996,0xFFF7,994,0xFFF7,0,0xFFFF};
-static struct eif_par_types par998 = {998, ptf998, (uint16) 3, (uint16) 0, (char) 0};
-
-/* DATE_TIME_PARSER */
-static EIF_TYPE_INDEX ptf999[] = {998,0xFFF7,992,0xFFFF};
-static struct eif_par_types par999 = {999, ptf999, (uint16) 2, (uint16) 0, (char) 0};
-
-/* DATE_TIME */
-static EIF_TYPE_INDEX ptf1000[] = {988,0xFFF7,979,0xFFF7,998,0xFFF7,137,0xFFFF};
+static EIF_TYPE_INDEX ptf1000[] = {993,0xFFF7,981,0xFFF7,999,0xFFF7,137,0xFFFF};
 static struct eif_par_types par1000 = {1000, ptf1000, (uint16) 4, (uint16) 0, (char) 0};
 
-/* SORTED_BST [INTEGER_32, G#2] */
-static EIF_TYPE_INDEX ptf1001[] = {1016,218,0xFFF8,2,0xFFFF};
-static struct eif_par_types par1001 = {1001, ptf1001, (uint16) 1, (uint16) 2, (char) 0};
+/* DATE_VALIDITY_CHECKER */
+static EIF_TYPE_INDEX ptf1001[] = {982,0xFFF7,994,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1001 = {1001, ptf1001, (uint16) 3, (uint16) 0, (char) 0};
 
-/* ELEMENT [INTEGER_32, G#2] */
-static EIF_TYPE_INDEX ptf1002[] = {0,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1002 = {1002, ptf1002, (uint16) 2, (uint16) 2, (char) 0};
+/* DATE */
+static EIF_TYPE_INDEX ptf1002[] = {993,0xFFF7,994,0xFFF7,1001,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1002 = {1002, ptf1002, (uint16) 4, (uint16) 0, (char) 0};
 
-/* FUN [INTEGER_32, G#2] */
-static EIF_TYPE_INDEX ptf1003[] = {263,0xFF01,1012,218,0xFFF8,2,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1003 = {1003, ptf1003, (uint16) 2, (uint16) 2, (char) 0};
+/* DATE_TIME_VALIDITY_CHECKER */
+static EIF_TYPE_INDEX ptf1003[] = {1001,0xFFF7,999,0xFFF7,0,0xFFFF};
+static struct eif_par_types par1003 = {1003, ptf1003, (uint16) 3, (uint16) 0, (char) 0};
 
-/* SET [G#1] */
-static EIF_TYPE_INDEX ptf1004[] = {263,0xFFF8,1,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1004 = {1004, ptf1004, (uint16) 2, (uint16) 1, (char) 0};
+/* DATE_TIME_PARSER */
+static EIF_TYPE_INDEX ptf1004[] = {1003,0xFFF7,997,0xFFFF};
+static struct eif_par_types par1004 = {1004, ptf1004, (uint16) 2, (uint16) 0, (char) 0};
 
-/* BAG [G#1] */
-static EIF_TYPE_INDEX ptf1005[] = {263,0xFF01,1011,0xFFF8,1,218,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1005 = {1005, ptf1005, (uint16) 2, (uint16) 1, (char) 0};
+/* DATE_TIME */
+static EIF_TYPE_INDEX ptf1005[] = {993,0xFFF7,984,0xFFF7,1003,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1005 = {1005, ptf1005, (uint16) 4, (uint16) 0, (char) 0};
 
-/* FUN [G#1, INTEGER_32] */
-static EIF_TYPE_INDEX ptf1006[] = {263,0xFF01,1011,0xFFF8,1,218,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1006 = {1006, ptf1006, (uint16) 2, (uint16) 2, (char) 0};
-
-/* BAG [INTEGER_32] */
-static EIF_TYPE_INDEX ptf1007[] = {263,0xFF01,1010,218,218,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1007 = {1007, ptf1007, (uint16) 2, (uint16) 1, (char) 0};
-
-/* FUN [INTEGER_32, INTEGER_32] */
-static EIF_TYPE_INDEX ptf1008[] = {263,0xFF01,1010,218,218,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1008 = {1008, ptf1008, (uint16) 2, (uint16) 2, (char) 0};
-
-/* SET [INTEGER_32] */
-static EIF_TYPE_INDEX ptf1009[] = {475,218,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1009 = {1009, ptf1009, (uint16) 2, (uint16) 1, (char) 0};
-
-/* PAIR [INTEGER_32, INTEGER_32] */
-static EIF_TYPE_INDEX ptf1010[] = {0,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1010 = {1010, ptf1010, (uint16) 2, (uint16) 2, (char) 0};
-
-/* PAIR [G#1, INTEGER_32] */
-static EIF_TYPE_INDEX ptf1011[] = {0,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1011 = {1011, ptf1011, (uint16) 2, (uint16) 2, (char) 0};
-
-/* PAIR [INTEGER_32, G#2] */
-static EIF_TYPE_INDEX ptf1012[] = {0,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1012 = {1012, ptf1012, (uint16) 2, (uint16) 2, (char) 0};
+/* SORTED_TREE_ADT [G#1, INTEGER_32] */
+static EIF_TYPE_INDEX ptf1006[] = {263,0xFFF8,1,0xFFFF};
+static struct eif_par_types par1006 = {1006, ptf1006, (uint16) 1, (uint16) 2, (char) 0};
 
 /* SEQ [G#1] */
-static EIF_TYPE_INDEX ptf1013[] = {263,0xFFF8,1,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1013 = {1013, ptf1013, (uint16) 2, (uint16) 1, (char) 0};
+static EIF_TYPE_INDEX ptf1007[] = {263,0xFFF8,1,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1007 = {1007, ptf1007, (uint16) 2, (uint16) 1, (char) 0};
 
-/* NODE [INTEGER_32, G#2] */
-static EIF_TYPE_INDEX ptf1014[] = {1015,218,0xFFF8,2,0xFFFF};
-static struct eif_par_types par1014 = {1014, ptf1014, (uint16) 1, (uint16) 2, (char) 0};
+/* PAIR [INTEGER_32, G#2] */
+static EIF_TYPE_INDEX ptf1008[] = {0,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1008 = {1008, ptf1008, (uint16) 2, (uint16) 2, (char) 0};
 
-/* BASIC_NODE [INTEGER_32, G#2] */
-static EIF_TYPE_INDEX ptf1015[] = {107,0xFFFF};
-static struct eif_par_types par1015 = {1015, ptf1015, (uint16) 1, (uint16) 2, (char) 0};
+/* SET [G#1] */
+static EIF_TYPE_INDEX ptf1009[] = {263,0xFFF8,1,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1009 = {1009, ptf1009, (uint16) 2, (uint16) 1, (char) 0};
 
-/* SORTED_TREE_ADT [INTEGER_32, G#2] */
-static EIF_TYPE_INDEX ptf1016[] = {475,218,0xFFFF};
-static struct eif_par_types par1016 = {1016, ptf1016, (uint16) 1, (uint16) 2, (char) 0};
+/* FUN [INTEGER_32, G#2] */
+static EIF_TYPE_INDEX ptf1010[] = {263,0xFF01,1008,218,0xFFF8,2,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1010 = {1010, ptf1010, (uint16) 2, (uint16) 2, (char) 0};
 
-/* FUN [G#1, G#2] */
-static EIF_TYPE_INDEX ptf1017[] = {263,0xFF01,1018,0xFFF8,1,0xFFF8,2,0xFFF7,137,0xFFFF};
+/* SET [INTEGER_32] */
+static EIF_TYPE_INDEX ptf1011[] = {475,218,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1011 = {1011, ptf1011, (uint16) 2, (uint16) 1, (char) 0};
+
+/* BAG [G#1] */
+static EIF_TYPE_INDEX ptf1012[] = {263,0xFF01,1017,0xFFF8,1,218,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1012 = {1012, ptf1012, (uint16) 2, (uint16) 1, (char) 0};
+
+/* FUN [G#1, INTEGER_32] */
+static EIF_TYPE_INDEX ptf1013[] = {263,0xFF01,1017,0xFFF8,1,218,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1013 = {1013, ptf1013, (uint16) 2, (uint16) 2, (char) 0};
+
+/* BAG [INTEGER_32] */
+static EIF_TYPE_INDEX ptf1014[] = {263,0xFF01,1016,218,218,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1014 = {1014, ptf1014, (uint16) 2, (uint16) 1, (char) 0};
+
+/* FUN [INTEGER_32, INTEGER_32] */
+static EIF_TYPE_INDEX ptf1015[] = {263,0xFF01,1016,218,218,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1015 = {1015, ptf1015, (uint16) 2, (uint16) 2, (char) 0};
+
+/* PAIR [INTEGER_32, INTEGER_32] */
+static EIF_TYPE_INDEX ptf1016[] = {0,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1016 = {1016, ptf1016, (uint16) 2, (uint16) 2, (char) 0};
+
+/* PAIR [G#1, INTEGER_32] */
+static EIF_TYPE_INDEX ptf1017[] = {0,0xFFF7,137,0xFFFF};
 static struct eif_par_types par1017 = {1017, ptf1017, (uint16) 2, (uint16) 2, (char) 0};
 
-/* PAIR [G#1, G#2] */
-static EIF_TYPE_INDEX ptf1018[] = {0,0xFFF7,137,0xFFFF};
+/* FUN [G#1, G#2] */
+static EIF_TYPE_INDEX ptf1018[] = {263,0xFF01,1019,0xFFF8,1,0xFFF8,2,0xFFF7,137,0xFFFF};
 static struct eif_par_types par1018 = {1018, ptf1018, (uint16) 2, (uint16) 2, (char) 0};
 
-/* SORTED_BST [G#1, INTEGER_32] */
-static EIF_TYPE_INDEX ptf1019[] = {1023,0xFFF8,1,218,0xFFFF};
-static struct eif_par_types par1019 = {1019, ptf1019, (uint16) 1, (uint16) 2, (char) 0};
+/* PAIR [G#1, G#2] */
+static EIF_TYPE_INDEX ptf1019[] = {0,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1019 = {1019, ptf1019, (uint16) 2, (uint16) 2, (char) 0};
 
 /* ELEMENT [G#1, INTEGER_32] */
 static EIF_TYPE_INDEX ptf1020[] = {0,0xFFF7,137,0xFFFF};
@@ -4096,23 +4096,51 @@ static struct eif_par_types par1021 = {1021, ptf1021, (uint16) 1, (uint16) 2, (c
 static EIF_TYPE_INDEX ptf1022[] = {107,0xFFFF};
 static struct eif_par_types par1022 = {1022, ptf1022, (uint16) 1, (uint16) 2, (char) 0};
 
-/* SORTED_TREE_ADT [G#1, INTEGER_32] */
-static EIF_TYPE_INDEX ptf1023[] = {263,0xFFF8,1,0xFFFF};
-static struct eif_par_types par1023 = {1023, ptf1023, (uint16) 1, (uint16) 2, (char) 0};
-
 /* INTERVAL [G#1] */
-static EIF_TYPE_INDEX ptf1024[] = {106,0xFFFF};
-static struct eif_par_types par1024 = {1024, ptf1024, (uint16) 1, (uint16) 1, (char) 0};
+static EIF_TYPE_INDEX ptf1023[] = {106,0xFFFF};
+static struct eif_par_types par1023 = {1023, ptf1023, (uint16) 1, (uint16) 1, (char) 0};
+
+/* SORTED_TREE_ADT [INTEGER_32, G#2] */
+static EIF_TYPE_INDEX ptf1024[] = {475,218,0xFFFF};
+static struct eif_par_types par1024 = {1024, ptf1024, (uint16) 1, (uint16) 2, (char) 0};
+
+/* ELEMENT [INTEGER_32, G#2] */
+static EIF_TYPE_INDEX ptf1025[] = {0,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1025 = {1025, ptf1025, (uint16) 2, (uint16) 2, (char) 0};
+
+/* NODE [INTEGER_32, G#2] */
+static EIF_TYPE_INDEX ptf1026[] = {1027,218,0xFFF8,2,0xFFFF};
+static struct eif_par_types par1026 = {1026, ptf1026, (uint16) 1, (uint16) 2, (char) 0};
+
+/* BASIC_NODE [INTEGER_32, G#2] */
+static EIF_TYPE_INDEX ptf1027[] = {107,0xFFFF};
+static struct eif_par_types par1027 = {1027, ptf1027, (uint16) 1, (uint16) 2, (char) 0};
+
+/* SORTED_BST [INTEGER_32, G#2] */
+static EIF_TYPE_INDEX ptf1028[] = {1024,218,0xFFF8,2,0xFFFF};
+static struct eif_par_types par1028 = {1028, ptf1028, (uint16) 1, (uint16) 2, (char) 0};
+
+/* SORTED_BST [G#1, INTEGER_32] */
+static EIF_TYPE_INDEX ptf1029[] = {1006,0xFFF8,1,218,0xFFFF};
+static struct eif_par_types par1029 = {1029, ptf1029, (uint16) 1, (uint16) 2, (char) 0};
+
+/* SORTED_RBT [INTEGER_32, G#2] */
+static EIF_TYPE_INDEX ptf1030[] = {1024,218,0xFFF8,2,0xFFFF};
+static struct eif_par_types par1030 = {1030, ptf1030, (uint16) 1, (uint16) 2, (char) 0};
+
+/* SORTED_RBT [G#1, INTEGER_32] */
+static EIF_TYPE_INDEX ptf1031[] = {1006,0xFFF8,1,218,0xFFFF};
+static struct eif_par_types par1031 = {1031, ptf1031, (uint16) 1, (uint16) 2, (char) 0};
 
 /* BASIC_NODE [G#1, INTEGER_64] */
-static EIF_TYPE_INDEX ptf1025[] = {107,0xFFFF};
-static struct eif_par_types par1025 = {1025, ptf1025, (uint16) 1, (uint16) 2, (char) 0};
+static EIF_TYPE_INDEX ptf1032[] = {107,0xFFFF};
+static struct eif_par_types par1032 = {1032, ptf1032, (uint16) 1, (uint16) 2, (char) 0};
 
 /* ELEMENT [G#1, INTEGER_64] */
-static EIF_TYPE_INDEX ptf1026[] = {0,0xFFF7,137,0xFFFF};
-static struct eif_par_types par1026 = {1026, ptf1026, (uint16) 2, (uint16) 2, (char) 0};
+static EIF_TYPE_INDEX ptf1033[] = {0,0xFFF7,137,0xFFFF};
+static struct eif_par_types par1033 = {1033, ptf1033, (uint16) 2, (uint16) 2, (char) 0};
 
-int egc_partab_size_init = 1026;
+int egc_partab_size_init = 1033;
 struct eif_par_types *egc_partab_init[] = {
 &par0,
 &par1,
@@ -5141,6 +5169,13 @@ struct eif_par_types *egc_partab_init[] = {
 &par1024,
 &par1025,
 &par1026,
+&par1027,
+&par1028,
+&par1029,
+&par1030,
+&par1031,
+&par1032,
+&par1033,
 NULL};
 
 #ifdef __cplusplus
