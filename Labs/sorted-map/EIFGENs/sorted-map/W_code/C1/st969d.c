@@ -119,6 +119,7 @@ static const struct desc_info desc_969[] = {
 	{EIF_NON_GENERIC(0x0197 /*203*/), 13611, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x0197 /*203*/), 13612, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x0197 /*203*/), 13613, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 0xFFFFFFFF, 0xFFFFFFFF},
 };
 void Init969(void)
 {

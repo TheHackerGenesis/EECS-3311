@@ -130,10 +130,12 @@ feature -- commands
 				prune (val, i)
 			end
 		ensure
-			pruned: False
+			pruned:
 				-- To Do
 				-- Hint: Use query `occurrences' and {FUN[K, V]}.domain_subtracted_by
 				-- with infix @<<
+
+				old occurrences (val).count >= i implies model ~ (old model.deep_twin @<< (((old occurrences (val)).deep_twin) [i]))
 			not_pruned: not (old occurrences (val).count >= i) implies model ~ (old model.deep_twin)
 		end
 
@@ -184,14 +186,16 @@ feature -- commands
 	merge (other: SORTED_MAP_ADT [K, V])
 			-- merges `Current' map with `other' map
 		require
-			distinct_keys: False
+			distinct_keys:
 			-- To Do
 			-- Hint: Consider the intersection operator |/\| in the SET class in Mathmodels.
+			model.domain /~ model.domain |/\| (other.model.domain)
 		deferred
 		ensure
-			merged: False
+			merged:
 			-- To Do
 			-- Hint: Consider the union operator |\/| in the SET class in Mathmodels.
+			model ~ (old model.deep_twin) |\/| (other.model)
 		end
 
 feature -- queries
@@ -219,13 +223,13 @@ feature -- queries
 			-- returns a sorted array of keys
 		deferred
 		ensure
-			same_counts: 
+			same_counts:
 				Result.count = model.count
-			array_matches_domain: 
+			array_matches_domain:
 				create {SET [K]}.make_from_array (Result) ~ model.domain
-			sorted: 
+			sorted:
 				across 1 |..| (model.count - 1) as i all Result [i.item] < Result [i.item + 1] end
-			model_unchanged: 
+			model_unchanged:
 				model ~ old model.deep_twin
 		end
 

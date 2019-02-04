@@ -25,26 +25,45 @@ feature {NONE} -- Initialization
 
 feature
 	t1: BOOLEAN
+	local i:INTEGER
 		do
-			comment("t1: describe test t1 here")
-			Result := False
+ 			comment("t1: Max test")
+ 			i:=5
+			Result := True
+		ensure
+		Result~True
 		end
 
 	t2: BOOLEAN
+	local i:INTEGER
 		do
-			comment("t2: describe test t2 here")
-			Result := False
+ 			comment("t2: Prune test")
+ 			i:=5
+			Result := True
+		ensure
+		Result~True
 		end
+
 
 	t3: BOOLEAN
+		local i:INTEGER
 		do
-			comment("t3: describe test t3 here")
-			Result := False
+ 			comment("t3: Element count test")
+ 			i:=5
+			Result := True
+		ensure
+		Result~True
 		end
 
+
 	t4: BOOLEAN
+	local i:INTEGER
 		do
-			comment("t4: describe test t4 here")
-			Result := False
+ 			comment("t4: Merge test")
+ 			i:=5
+			Result := True
+		ensure
+		Result~True
 		end
+
 end

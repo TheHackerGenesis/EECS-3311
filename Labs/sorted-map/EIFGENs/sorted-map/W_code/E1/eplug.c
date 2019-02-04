@@ -113,7 +113,7 @@ void egc_init_plug (void)
 	egc_forg_table = egc_forg_table_init;
 
 	egc_system_name = "sorted-map";
-	egc_system_location = "/cs/home/kishanpa/Desktop/sorted-map/EIFGENs/sorted-map/W_code";
+	egc_system_location = "/cs/home/kishanpa/EECS-3311/Labs/sorted-map/EIFGENs/sorted-map/W_code";
 	egc_compiler_tag = 38;
 	egc_project_version = 1545063791;
 	egc_has_old_special_semantic = 0;

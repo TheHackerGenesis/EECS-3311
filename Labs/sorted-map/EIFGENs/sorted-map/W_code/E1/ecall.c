@@ -5708,6 +5708,7 @@ struct rout_info egc_forg_table_init[] = {
 	{387, (uint16) 23},
 	{387, (uint16) 24},
 	{387, (uint16) 25},
+	{364, (uint16) 5},
 };
 
 #ifdef __cplusplus
