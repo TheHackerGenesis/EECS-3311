@@ -1,0 +1,2 @@
+play(5)
+move_king([1,2])

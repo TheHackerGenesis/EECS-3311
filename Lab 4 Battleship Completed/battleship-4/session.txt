@@ -1,0 +1,3 @@
+debug_test(hard)
+debug_test(advanced)
+fire([J, 2])

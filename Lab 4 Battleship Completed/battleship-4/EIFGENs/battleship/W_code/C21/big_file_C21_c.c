@@ -1,0 +1,8 @@
+#include "ha1622d.c"
+#include "ta1619.c"
+#include "ha1622.c"
+#include "ta1619d.c"
+#include "ta1621.c"
+#include "ta1620.c"
+#include "ta1620d.c"
+#include "ta1621d.c"

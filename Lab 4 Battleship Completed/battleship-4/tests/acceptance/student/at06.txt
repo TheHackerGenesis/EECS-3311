@@ -1,0 +1,6 @@
+-- user test 2
+debug_test(hard)
+debug_test(advanced)
+fire([J,2])
+bomb([F,6],[G,7])
+bomb([F,6],[F,6])
