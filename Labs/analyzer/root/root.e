@@ -17,7 +17,8 @@ feature {NONE} -- Initialization
 
 	make
 		do
-			add_test (create {BASIC_TESTS}.make) 
+			add_test (create {BASIC_TESTS}.make)
+			add_test (create {STUDENT_TESTS}.make)
 			show_browser
 			run_espec
 		end

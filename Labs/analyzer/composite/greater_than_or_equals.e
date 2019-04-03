@@ -16,7 +16,7 @@ create
 feature -- Command for accepting a visitor
 	accept (v: VISITOR)
 		do
-			-- To Do
+			v.visit_greater_than_or_equals (Current)
 		end
 
 end

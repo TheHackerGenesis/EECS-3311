@@ -25,7 +25,7 @@ feature -- Attributes
 feature -- Command for accepting a visitor
 	accept (v: VISITOR)
 		do
-			-- To Do
+			v.visit_value_constant (Current)
 		end
 
 end

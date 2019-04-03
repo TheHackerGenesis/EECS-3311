@@ -17,6 +17,7 @@ feature -- Command for accepting a visitor
 	accept (v: VISITOR)
 		do
 			-- To Do
+			v.visit_addition (Current)
 		end
 
 end
